@@ -81,7 +81,11 @@ func parseRoute(s *astra.Service, baseRoute *astra.Route) error {
 			return true
 		}
 
+		n = n
 		funcDecl, ok := n.(*ast.FuncDecl)
+		if ok {
+			fmt.Print(n)
+		}
 
 		if ok && funcDecl.Name.Name == funcName {
 			log.Debug().Str("funcName", funcName).Msg("Found handler function")

@@ -40,5 +40,8 @@ func (h HandlerPath) Handler() string {
 }
 
 func (h HandlerPath) FuncName() string {
+	if len(h.HandlerParts) > 1 {
+		return h.HandlerParts[1][:len(h.HandlerParts[1])-3]
+	}
 	return h.HandlerParts[0]
 }
