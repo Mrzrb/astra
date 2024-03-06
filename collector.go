@@ -80,10 +80,13 @@ func ParseAndStoreMethods(filename string) map[string]MethodInfo {
 				pos := fset.Position(x.Pos())
 				methodReceiver := ""
 				if len(x.Recv.List) > 0 {
-					recvIdent := x.Recv.List[0].Type.(*ast.StarExpr).X.(*ast.Ident)
-					if x.Recv.List[0].Type.(*ast.StarExpr) != nil {
+					_, ok := x.Recv.List[0].Type.(*ast.StarExpr)
+					if ok {
+						recvIdent := x.Recv.List[0].Type.(*ast.StarExpr).X.(*ast.Ident)
 						methodReceiver = "*" + recvIdent.Name
+
 					} else {
+						recvIdent := x.Recv.List[0].Type.(*ast.Ident)
 						methodReceiver = recvIdent.Name
 					}
 				}
