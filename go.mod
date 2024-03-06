@@ -1,6 +1,6 @@
-module github.com/ls6-events/astra
+module github.com/Mrzrb/astra
 
-go 1.21
+go 1.19
 
 require (
 	github.com/Jeffail/gabs/v2 v2.7.0

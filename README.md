@@ -36,13 +36,13 @@ For example, if you had a Go backend that used the [Gin](https://www.github.com/
 ## Usage
 If you have [Go module](https://github.com/golang/go/wiki/Modules) support, then simply add this import to your configuration:
 ```go
-import "github.com/ls6-events/astra"
+import "github.com/Mrzrb/astra"
 ```
 and run the appropriate `go` commands to pull in the dependency.
 
 Otherwise, install the package using the following command:
 ```bash
-$ go get -u github.com/ls6-events/astra
+$ go get -u github.com/Mrzrb/astra
 ```
 We recommend using the OpenAPI specification as the output format, as it is the most widely used format for describing RESTful APIs. To use it, you need to import the following package:
 ```go
@@ -50,9 +50,9 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/inputs"
-	"github.com/ls6-events/astra/outputs"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/inputs"
+	"github.com/Mrzrb/astra/outputs"
 )
 
 func main() {
@@ -146,7 +146,7 @@ There is more information in the [how it works documentation](./docs/how-it-work
 
 ## Issue Reporting
 
-Naturally a project that has to adapt to so many people's coding styles will have some issues. If you find any, please report them in the [issues](https://www.github.com/LS6-Events/astra/issues) section of this repository. 
+Naturally a project that has to adapt to so many people's coding styles will have some issues. If you find any, please report them in the [issues](https://www.github.com/Mrzrb/astra/issues) section of this repository. 
 
 Please try to be as specific as possible, 
 

@@ -1,7 +1,7 @@
 package astra
 
 import (
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra/astTraversal"
 	"github.com/stretchr/testify/require"
 	"go/ast"
 	"testing"
@@ -169,7 +169,7 @@ func TestContextFuncBuilder_Build(t *testing.T) {
 	t.Run("valid status code param", func(t *testing.T) {
 		callExpression := setupTestCallExpressionTraverser(t, "contextFuncBuilderStatusCode")
 
-		_, err := callExpression.Traverser.Packages.Get(callExpression.Traverser.Packages.Find("github.com/ls6-events/astra/astTraversal/testfiles"))
+		_, err := callExpression.Traverser.Packages.Get(callExpression.Traverser.Packages.Find("github.com/Mrzrb/astra/astTraversal/testfiles"))
 		require.NoError(t, err)
 
 		contextFuncBuilder := NewContextFuncBuilder(&Route{
@@ -190,7 +190,7 @@ func TestContextFuncBuilder_Build(t *testing.T) {
 	t.Run("valid expression result param", func(t *testing.T) {
 		callExpression := setupTestCallExpressionTraverser(t, "contextFuncBuilderExpressionResult")
 
-		_, err := callExpression.Traverser.Packages.Get(callExpression.Traverser.Packages.Find("github.com/ls6-events/astra/astTraversal/testfiles"))
+		_, err := callExpression.Traverser.Packages.Get(callExpression.Traverser.Packages.Find("github.com/Mrzrb/astra/astTraversal/testfiles"))
 		require.NoError(t, err)
 
 		contextFuncBuilder := NewContextFuncBuilder(&Route{
@@ -214,7 +214,7 @@ func TestContextFuncBuilder_Build(t *testing.T) {
 	t.Run("valid value param", func(t *testing.T) {
 		callExpression := setupTestCallExpressionTraverser(t, "contextFuncBuilderValue")
 
-		pkgNode := callExpression.Traverser.Packages.AddPackage("github.com/ls6-events/astra/astTraversal/testfiles")
+		pkgNode := callExpression.Traverser.Packages.AddPackage("github.com/Mrzrb/astra/astTraversal/testfiles")
 
 		_, err := callExpression.Traverser.Packages.Get(pkgNode)
 		require.NoError(t, err)

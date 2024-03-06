@@ -1,7 +1,7 @@
 package astra
 
 import (
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra/astTraversal"
 	"github.com/stretchr/testify/require"
 	"testing"
 )

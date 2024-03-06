@@ -1,6 +1,6 @@
 package astra
 
-import "github.com/ls6-events/astra/astTraversal"
+import "github.com/Mrzrb/astra/astTraversal"
 
 type ContextFuncBuilder struct {
 	Route           *Route

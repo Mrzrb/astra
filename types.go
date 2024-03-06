@@ -1,6 +1,6 @@
 package astra
 
-import "github.com/ls6-events/astra/astTraversal"
+import "github.com/Mrzrb/astra/astTraversal"
 
 // These are types that are used throughout the astra package.
 

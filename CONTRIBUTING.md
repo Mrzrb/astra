@@ -4,8 +4,8 @@
 
 ### Finding an issue to work on
 
-If you are looking for an issue to work on, you can check the [issues](https://github.com/LS6-Events/astra/issues) page. If you find an issue you would like to work on, you can assign yourself to it by commenting on the issue and the maintainers will assign it to you.
-If you have an idea for a new feature, you can start by [opening an issue](https://github.com/LS6-Events/astra/issues/new) and describe the feature you would like to implement, this will then be review by a maintainer and if approved you can begin your work and create a pull request.
+If you are looking for an issue to work on, you can check the [issues](https://github.com/Mrzrb/astra/issues) page. If you find an issue you would like to work on, you can assign yourself to it by commenting on the issue and the maintainers will assign it to you.
+If you have an idea for a new feature, you can start by [opening an issue](https://github.com/Mrzrb/astra/issues/new) and describe the feature you would like to implement, this will then be review by a maintainer and if approved you can begin your work and create a pull request.
 
 ### Setup your environment locally
 

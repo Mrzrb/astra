@@ -3,7 +3,7 @@ package astra
 import (
 	"strings"
 
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra/astTraversal"
 )
 
 // ParseResultToField changes a result from the AST traversal to a local field.

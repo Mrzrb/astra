@@ -1,6 +1,8 @@
 package astra
 
-import "maps"
+import (
+	"encoding/json"
+)
 
 // TypeFormat is the types of the standard go types that are accepted by OpenAPI.
 type TypeFormat struct {
@@ -125,12 +127,17 @@ func WithCustomTypeMappingSingle(key string, valueType string, valueFormat strin
 	}
 }
 
+func clone(src interface{}, dst interface{}) {
+	bs, _ := json.Marshal(src)
+	json.Unmarshal(bs, &dst)
+}
+
 // GetTypeMapping returns the type mapping for the given key.
 func (s *Service) GetTypeMapping(key string, pkg string) (TypeFormat, bool) {
 	if s.fullTypeMapping == nil {
 		s.fullTypeMapping = make(map[string]TypeFormat)
-		maps.Copy(s.fullTypeMapping, PredefinedTypeMap)
-		maps.Copy(s.fullTypeMapping, s.CustomTypeMapping)
+		clone(s.fullTypeMapping, PredefinedTypeMap)
+		clone(s.fullTypeMapping, s.CustomTypeMapping)
 	}
 
 	if !IsAcceptedType(key) {

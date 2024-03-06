@@ -1,7 +1,7 @@
 package astra
 
 import (
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra/astTraversal"
 	"github.com/stretchr/testify/require"
 	"testing"
 )
@@ -56,7 +56,7 @@ func TestParseResultToField(t *testing.T) {
 
 			field := ParseResultToField(result)
 
-			require.Equal(t, "github.com/ls6-events/astra", field.Package)
+			require.Equal(t, "github.com/Mrzrb/astra", field.Package)
 		})
 
 		t.Run("non-primitive slice type", func(t *testing.T) {

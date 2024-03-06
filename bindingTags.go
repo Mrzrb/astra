@@ -2,9 +2,8 @@ package astra
 
 import (
 	"reflect"
-	"slices"
 
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra/astTraversal"
 )
 
 func ExtractBindingTags(fields map[string]Field) (bindingTags []astTraversal.BindingTagType, uniqueBindings bool) {
@@ -15,7 +14,7 @@ func ExtractBindingTags(fields map[string]Field) (bindingTags []astTraversal.Bin
 				uniqueBindings = !reflect.DeepEqual(bindingTag, previousTag)
 			}
 
-			if !slices.Contains(bindingTags, bindingType) {
+			if !Contains(bindingTags, bindingType) {
 				bindingTags = append(bindingTags, bindingType)
 			}
 
