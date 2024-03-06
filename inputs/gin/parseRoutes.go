@@ -1,7 +1,7 @@
 package gin
 
 import (
-	"github.com/ls6-events/astra"
+	"github.com/Mrzrb/astra"
 )
 
 // ParseRoutes parses routes from a gin routes.

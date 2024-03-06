@@ -2,8 +2,8 @@ package inputs
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra"
-	astraGin "github.com/ls6-events/astra/inputs/gin"
+	"github.com/Mrzrb/astra"
+	astraGin "github.com/Mrzrb/astra/inputs/gin"
 )
 
 const (

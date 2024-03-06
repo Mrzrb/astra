@@ -2,10 +2,10 @@ package snapshot
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/inputs"
-	"github.com/ls6-events/astra/outputs"
-	"github.com/ls6-events/astra/tests/snapshot/comparison"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/inputs"
+	"github.com/Mrzrb/astra/outputs"
+	"github.com/Mrzrb/astra/tests/snapshot/comparison"
 	"github.com/stretchr/testify/require"
 	"os"
 	"testing"

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ls6-events/astra/cli/astra/cmd"
+	"github.com/Mrzrb/astra/cli/astra/cmd"
 	"os"
 )
 

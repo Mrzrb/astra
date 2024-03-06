@@ -1,6 +1,6 @@
 package cli
 
-import "github.com/ls6-events/astra"
+import "github.com/Mrzrb/astra"
 
 // WithCLI enables the CLI mode for the generator
 // This will run the generator to only crawl for the file names, function names and line numbers of the functions that need to be analysed.

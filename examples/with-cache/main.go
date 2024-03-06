@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/cache"
-	"github.com/ls6-events/astra/inputs"
-	"github.com/ls6-events/astra/outputs"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/cache"
+	"github.com/Mrzrb/astra/inputs"
+	"github.com/Mrzrb/astra/outputs"
 )
 
 func main() {

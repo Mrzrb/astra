@@ -5,8 +5,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/cli"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/cli"
 	"github.com/spf13/cobra"
 )
 

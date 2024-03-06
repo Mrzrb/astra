@@ -6,9 +6,9 @@ import (
 
 	"github.com/Jeffail/gabs/v2"
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/inputs"
-	"github.com/ls6-events/astra/outputs"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/inputs"
+	"github.com/Mrzrb/astra/outputs"
 	"github.com/stretchr/testify/require"
 )
 

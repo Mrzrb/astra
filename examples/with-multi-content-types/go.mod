@@ -2,11 +2,11 @@ module withmulticontenttypes
 
 go 1.21
 
-replace github.com/ls6-events/astra => ../../
+replace github.com/Mrzrb/astra => ../../
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/ls6-events/astra v1.13.0
+	github.com/Mrzrb/astra v1.13.0
 )
 
 require (

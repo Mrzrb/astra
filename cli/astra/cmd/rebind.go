@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/inputs"
-	"github.com/ls6-events/astra/outputs"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/inputs"
+	"github.com/Mrzrb/astra/outputs"
 )
 
 // These functions are used to rebind the inputs and outputs to the service, as the JSON unmarshalling does not call the functions to bind the inputs and outputs, and loses all their referenced functions

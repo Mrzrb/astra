@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ls6-events/astra"
+	"github.com/Mrzrb/astra"
 
 	"github.com/gin-gonic/gin"
 )

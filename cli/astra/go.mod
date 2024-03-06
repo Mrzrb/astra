@@ -1,11 +1,11 @@
-module github.com/ls6-events/astra/cli/astra
+module github.com/Mrzrb/astra/cli/astra
 
 go 1.21
 
-replace github.com/ls6-events/astra => ../../
+replace github.com/Mrzrb/astra => ../../
 
 require (
-	github.com/ls6-events/astra v0.0.0-00010101000000-000000000000
+	github.com/Mrzrb/astra v0.0.0-00010101000000-000000000000
 	github.com/spf13/cobra v1.7.0
 )
 

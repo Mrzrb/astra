@@ -2,7 +2,7 @@ package petstore
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra/tests/petstore"
+	"github.com/Mrzrb/astra/tests/petstore"
 )
 
 func setupRouter() *gin.Engine {

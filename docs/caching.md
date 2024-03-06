@@ -8,7 +8,7 @@ The caching mechanism has two options that can be set:
 * `cache.WithCache()` - This option enables the caching mechanism with the default cache file of `.astra/cache.json` in the temporary directory. This also disables cleanup of this directory entirely throughout the process.
 * `cache.WithCustomCachePath("cache.json")` - This option enables the caching mechanism with a custom cache file of `cache.json` in the current working directory. It supports both JSON and YAML files. This also disables cleanup of this directory entirely throughout the process.
 
-Both of these options are imported from `github.com/LS6-Events/astra/cache`.
+Both of these options are imported from `github.com/Mrzrb/astra/cache`.
 
 ## Plans for the future
 We aim to utilise this caching mechanism to maintain state between attempts that this program runs, i.e. only iterate and generate files that have changed and append them to existing outputs, or only run if a function has changed. Any suggestions for both ideas or implementations are welcome.

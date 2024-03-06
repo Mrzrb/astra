@@ -1,8 +1,8 @@
 package openapi
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/astTraversal"
 )
 
 func mapParamToSchema(bindingType astTraversal.BindingTagType, param astra.Param) (Schema, bool) {

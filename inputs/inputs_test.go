@@ -1,7 +1,7 @@
 package inputs
 
 import (
-	"github.com/ls6-events/astra"
+	"github.com/Mrzrb/astra"
 	"github.com/stretchr/testify/require"
 	"testing"
 )

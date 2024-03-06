@@ -6,8 +6,8 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/astTraversal"
 )
 
 const (

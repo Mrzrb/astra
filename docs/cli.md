@@ -7,13 +7,13 @@ Astra has also a command line interface (CLI) that can be used to generate code.
 First, you need to install the CLI:
 
 ```bash
-go install github.com/ls6-events/astra/cli/astra
+go install github.com/Mrzrb/astra/cli/astra
 ```
 
 Next, you must import the CLI package into your code:
 
 ```go
-import "github.com/ls6-events/astra/cli"
+import "github.com/Mrzrb/astra/cli"
 ```
 
 And you must include the `cli.WithCLI()` option in your `astra.New` function:
@@ -58,11 +58,11 @@ The following is an example of how to use the CLI. It looks similar to the examp
 package main
 
 import (
-	"github.com/ls6-events/astra"
-	astraGin "github.com/ls6-events/astra/inputs/gin"
-	"github.com/ls6-events/astra/outputs/openapi"
+	"github.com/Mrzrb/astra"
+	astraGin "github.com/Mrzrb/astra/inputs/gin"
+	"github.com/Mrzrb/astra/outputs/openapi"
 	"github.com/gin-gonic/gin"
-	"github.com/ls6-events/astra/cli" // Note the new import!
+	"github.com/Mrzrb/astra/cli" // Note the new import!
 )
 
 func main() {

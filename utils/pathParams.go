@@ -3,7 +3,7 @@ package utils
 import (
 	"regexp"
 
-	"github.com/ls6-events/astra"
+	"github.com/Mrzrb/astra"
 )
 
 // getPathParamRegex returns a regex to match path parameters.

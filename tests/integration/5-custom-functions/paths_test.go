@@ -1,8 +1,8 @@
 package petstore
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/tests/integration/helpers"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/tests/integration/helpers"
 	"github.com/stretchr/testify/require"
 	"testing"
 )

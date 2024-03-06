@@ -1,10 +1,10 @@
 package outputs
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/outputs/azureFunctions"
-	"github.com/ls6-events/astra/outputs/json"
-	"github.com/ls6-events/astra/outputs/openapi"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/outputs/azureFunctions"
+	"github.com/Mrzrb/astra/outputs/json"
+	"github.com/Mrzrb/astra/outputs/openapi"
 )
 
 const (

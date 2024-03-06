@@ -2,11 +2,11 @@ module withgorm
 
 go 1.21
 
-replace github.com/ls6-events/astra => ../../
+replace github.com/Mrzrb/astra => ../../
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/ls6-events/astra v0.0.0-00010101000000-000000000000
+	github.com/Mrzrb/astra v0.0.0-00010101000000-000000000000
 	gorm.io/driver/sqlite v1.5.3
 	gorm.io/gorm v1.25.4
 )

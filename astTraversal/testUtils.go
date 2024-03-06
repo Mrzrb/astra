@@ -30,7 +30,7 @@ func CreateTraverserFromTestFile(testFilePath string) (*BaseTraverser, error) {
 
 	traverser := New(wd)
 
-	packagePath := "github.com/ls6-events/astra/" + relativeTestFilePath
+	packagePath := "github.com/Mrzrb/astra/" + relativeTestFilePath
 
 	fileNode := &FileNode{
 		AST:      file,

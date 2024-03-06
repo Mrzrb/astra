@@ -1,7 +1,7 @@
 package petstore
 
 import (
-	"github.com/ls6-events/astra/tests/petstore"
+	"github.com/Mrzrb/astra/tests/petstore"
 )
 
 type Cat struct {

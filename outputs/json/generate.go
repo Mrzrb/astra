@@ -6,7 +6,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ls6-events/astra"
+	"github.com/Mrzrb/astra"
 )
 
 // JSONOutput is the output of the JSON output.

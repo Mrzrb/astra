@@ -1,8 +1,8 @@
 package petstore
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/tests/integration/helpers"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/tests/integration/helpers"
 	"github.com/stretchr/testify/require"
 	"testing"
 )
@@ -15,7 +15,7 @@ func TestSubstituteTypes(t *testing.T) {
 	r := setupRouter()
 
 	testAstra, err := helpers.SetupTestAstraWithDefaultConfig(t, r, astra.WithCustomTypeMapping(map[string]astra.TypeFormat{
-		"github.com/ls6-events/astra/tests/petstore.Tag": astra.TypeFormat{
+		"github.com/Mrzrb/astra/tests/petstore.Tag": astra.TypeFormat{
 			Type:   "string",
 			Format: "tag",
 		},

@@ -1,6 +1,6 @@
 package cache
 
-import "github.com/ls6-events/astra"
+import "github.com/Mrzrb/astra"
 
 // WithCache Option to enable the cache.
 func WithCache() astra.Option {

@@ -1,8 +1,8 @@
 package openapi
 
 import (
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/astTraversal"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/astTraversal"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -14,7 +14,7 @@ func TestCollisionSafeKey(t *testing.T) {
 }
 
 func TestGetPackageName(t *testing.T) {
-	pkg := "github.com/ls6-events/astra"
+	pkg := "github.com/Mrzrb/astra"
 	expected := "astra"
 	name := getPackageName(pkg)
 	assert.Equal(t, expected, name)

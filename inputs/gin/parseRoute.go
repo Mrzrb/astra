@@ -5,9 +5,9 @@ import (
 	"go/ast"
 	"path"
 
-	"github.com/ls6-events/astra"
-	"github.com/ls6-events/astra/astTraversal"
-	"github.com/ls6-events/astra/utils"
+	"github.com/Mrzrb/astra"
+	"github.com/Mrzrb/astra/astTraversal"
+	"github.com/Mrzrb/astra/utils"
 
 	"github.com/iancoleman/strcase"
 )
