@@ -27,7 +27,8 @@ type Service struct {
 
 	Routes []Route `json:"routes" yaml:"routes"`
 
-	Components []Field `json:"components" yaml:"components"`
+	Components    []Field `json:"components" yaml:"components"`
+	AstMethodInfo map[string]MethodInfo
 
 	tempMainPackageName string
 	WorkDir             string `json:"-" yaml:"-"`

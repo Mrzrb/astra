@@ -7,6 +7,8 @@ import "errors"
 // SetupParse should be called before CompleteParse.
 // SetupParse should be used if you are using the CLI or if you want to parse the routes yourself.
 func (s *Service) SetupParse() error {
+	symbleMap := Collector(".")
+	s.AstMethodInfo = symbleMap
 	s.Log.Info().Msg("Setting up parse")
 
 	if len(s.Inputs) == 0 {
