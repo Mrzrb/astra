@@ -82,8 +82,11 @@ func ParseAndStoreMethods(filename string) map[string]MethodInfo {
 				if len(x.Recv.List) > 0 {
 					switch nn := x.Recv.List[0].Type.(type) {
 					case *ast.StarExpr:
-						recvIdent := nn.X.(*ast.Ident)
-						methodReceiver = "*" + recvIdent.Name
+						switch nnn := nn.X.(type) {
+						case *ast.Ident:
+							recvIdent := nnn
+							methodReceiver = "*" + recvIdent.Name
+						}
 					case *ast.IndexExpr:
 						recvIdent := nn.X.(*ast.Ident)
 						methodReceiver = recvIdent.Name
