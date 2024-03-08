@@ -29,7 +29,7 @@ func collisionSafeKey(bindingType astTraversal.BindingTagType, name, pkg string)
 	return strings.Join(keyComponents, ".")
 }
 
-// getPackageName gets the package name from the package path (i.e. git.zuoyebang.cc/zhangruobin/astra -> astra).
+// getPackageName gets the package name from the package path (i.e. github.com/Mrzrb/astra -> astra).
 func getPackageName(pkg string) string {
 	return pkg[strings.LastIndex(pkg, "/")+1:]
 }
@@ -91,7 +91,7 @@ func makeCollisionSafeNamesFromComponents(components []astra.Field) {
 
 					// Pick the final part of the package path, guided by sameUntil.
 					// We add 1 because we want to access the first different part of the package path.
-					// e.g. git.zuoyebang.cc/zhangruobin/astra and github.com/different/astra would give us sameUntil = 1.
+					// e.g. github.com/Mrzrb/astra and github.com/different/astra would give us sameUntil = 1.
 					// and split into "ls6-events" and "different".
 
 					splitPackage = splitPackage[len(splitPackage)-(sameUntil+1):]

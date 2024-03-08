@@ -13,6 +13,8 @@ type Pet struct {
 	PhotoURLs []string `json:"photoUrls,omitempty"`
 	Status    string   `json:"status,omitempty"`
 	Tags      []Tag    `json:"tags,omitempty"`
+	Child     *Pet     `json:"child"`
+	CHilds    []*Pet   `json:"childs"`
 }
 
 // PetDTO the pet dto.

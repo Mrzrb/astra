@@ -11,6 +11,8 @@ import (
 type MyStruct struct {
 	// Name is a string
 	Name string
+
+	PP *MyStruct
 }
 
 // MyInt is an int.

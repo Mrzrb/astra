@@ -1,16 +1,13 @@
 package astra
 
-import (
-	"errors"
-)
+import "errors"
 
 // SetupParse sets up the parse by calling the Setup function and then the CreateRoutes function.
 // It will create the routes from the inputs but not parse them.
 // SetupParse should be called before CompleteParse.
 // SetupParse should be used if you are using the CLI or if you want to parse the routes yourself.
 func (s *Service) SetupParse() error {
-	symbleMap := Collector(".")
-	s.AstMethodInfo = symbleMap
+	s.Log.Info().Msg("Setting up parse")
 
 	if len(s.Inputs) == 0 {
 		err := errors.New("input not set")

@@ -17,6 +17,14 @@ type TypeTraverser struct {
 	name string
 }
 
+func Id(t *types.Struct) string {
+	var builder strings.Builder
+	builder.WriteString(t.String())
+	return builder.String()
+}
+
+var structCache = map[string]*Result{}
+
 func (t *BaseTraverser) Type(node types.Type, packageNode *PackageNode) *TypeTraverser {
 	return &TypeTraverser{
 		Traverser: t,
@@ -31,6 +39,11 @@ func (t *TypeTraverser) SetName(name string) *TypeTraverser {
 }
 
 func (t *TypeTraverser) Result() (Result, error) {
+	if nn, ok := t.Node.(*types.Struct); ok {
+		if r, ok := structCache[Id(nn)]; ok {
+			return *r, nil
+		}
+	}
 	var result Result
 	switch n := t.Node.(type) {
 	case *types.Basic:
@@ -202,6 +215,7 @@ func (t *TypeTraverser) Result() (Result, error) {
 			Package:       valueResult.Package,
 		}
 	case *types.Struct:
+		structCache[Id(n)] = &result
 		fields := make(map[string]Result)
 		for i := 0; i < n.NumFields(); i++ {
 			f := n.Field(i)
