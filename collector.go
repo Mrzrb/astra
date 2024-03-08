@@ -2,6 +2,7 @@ package astra
 
 import (
 	"errors"
+	"fmt"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -17,6 +18,10 @@ type MethodInfo struct {
 	Line           int
 	MethodReceiver string
 	PkgName        string
+}
+
+func (m *MethodInfo) Id() string {
+	return fmt.Sprintf("%s-%s-%s", m.PkgName, m.MethodReceiver, m.MethodName)
 }
 
 func Collector(rootPath string) map[string]MethodInfo {
@@ -103,7 +108,7 @@ func ParseAndStoreMethods(filename string) map[string]MethodInfo {
 					MethodReceiver: methodReceiver,
 					PkgName:        pkgName,
 				}
-				result[methodName] = methodInfo
+				result[methodInfo.Id()] = methodInfo
 			}
 		}
 		return true
