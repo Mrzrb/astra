@@ -142,6 +142,9 @@ func (t *TypeTraverser) Result() (Result, error) {
 
 	case *types.Named:
 		var pkg *PackageNode
+		if n.Obj().Name() == "Response" {
+			println(n)
+		}
 		if n.Obj().Pkg() != nil {
 			pkg = t.Traverser.Packages.FindOrAdd(n.Obj().Pkg().Path())
 			_, err := t.Traverser.Packages.Get(pkg)
@@ -247,8 +250,12 @@ func (t *TypeTraverser) Result() (Result, error) {
 				node, err := structFieldResult.Package.ASTAtPos(pos)
 				if err == nil && node != nil {
 					if field, ok := node.(*ast.Field); ok {
-						t.Traverser.Log.Debug().Str("field", field.Names[0].Name).Msg("Found doc for field")
-						structFieldResult.Doc = FormatDoc(field.Doc.Text())
+						if field.Names != nil {
+							t.Traverser.Log.Debug().Str("field", field.Names[0].Name).Msg("Found doc for field")
+						}
+						if field.Doc != nil {
+							structFieldResult.Doc = FormatDoc(field.Doc.Text())
+						}
 					}
 				}
 			}
@@ -279,7 +286,7 @@ func (t *TypeTraverser) Result() (Result, error) {
 	if result.Type != "" {
 		return result, nil
 	} else {
-		return Result{}, ErrInvalidNodeType
+		return Result{}, nil
 	}
 }
 
